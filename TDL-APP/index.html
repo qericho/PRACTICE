@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="grid place-items-center h-screen bg-gradient-to-r from-slate-900 to-slate-700 font-mono">
+    <!-- Container -->
+     <div class="w-full md:w-[500px] bg-white rounded-md flex flex-col items-center py-4 px-4">
+        <!-- inputs -->
+         <div>
+            <input id="userInput"
+            class="border  pl-2"
+            type="text" placeholder="Enter a Task">
+            <button id="submitBtn"
+            class="border px-2 bg-red-600 hover:bg-red-700 text-white rounded-sm cursor-pointer">
+                Submit</button>
+         </div>
+         <!-- List of Task -->
+          <div class="w-full md:w-[400px] mt-4">
+            <ul id="listItem">
+                <!-- <li class="flex p-2 justify-between my-2 hover:bg-gray-300">
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox">
+                        <h1>Sample Task</h1>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button
+                         class="px-2 cursor-pointer rounded-sm  text-white bg-red-500 hover:bg-red-600">
+                         Delete</button>
+                        <button
+                         class="px-2 cursor-pointer rounded-sm  text-white bg-blue-500 hover:bg-blue-600">
+                         Update</button>
+                    </div>
+                </li> -->
+            </ul>
+          </div>
+     </div>
+
+     <script src="./script.js"></script>
+</body>
+</html>
