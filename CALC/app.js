@@ -6,16 +6,24 @@ const del = document.getElementById('del');
 
 
 btns.forEach((btn) => {
-   
     btn.addEventListener('click', (e) => {
-        displayOutput.value += e.target.value;
-    })
-})
+        const value = e.target.value;
+        const lastChar = displayOutput.value.slice(-1);
+
+  
+        if (/[+\-*/.]/.test(lastChar) && /[+\-*/.]/.test(value)) return;
+
+        displayOutput.value += value;
+    });
+});
 
 equals.addEventListener('click', () => {
     try {
-        if (/^[\d+\-*/().]+$/.test(displayOutput.value)) {
-            displayOutput.value = eval(displayOutput.value);
+        const expression = displayOutput.value.trim(); 
+
+
+        if (/^[\d+\-*/().\s]+$/.test(expression) && expression !== "") {
+            displayOutput.value = eval(expression);
         } else {
             displayOutput.value = "Error!";
         }
