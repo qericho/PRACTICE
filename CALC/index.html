@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+</head>
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+<body class="grid place-items-center h-screen">
+    <!-- CALC CONTAINER -->
+     <div class="border w-full md:w-[800px] h-[500px] p-4  md:px-2">
+        <!-- Display -->
+         <div>
+                <input type="text" disabled class="bg-black w-full h-[80px] my-5 text-white text-2xl text-end pr-5 font-mono" >
+         </div>
+         <!-- Buttons -->
+         <div class="grid grid-cols-4 gap-2 place-items-center mt-2 text-white text-[20px] md:text-3xl font-medium md:font-bold ">
+            <input type="button" value="7" class="bg-gray-500  hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="8" class="bg-gray-500  hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="9" class="bg-gray-500  hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="del" class="bg-red-400 hover:bg-red-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="4" class="bg-gray-500 hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="5" class="bg-gray-500 hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="6" class="bg-gray-500 hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="+" class="bg-gray-500 hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="1" class="bg-gray-500 hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="2" class="bg-gray-500 hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="3" class="bg-gray-500 hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="-" class="bg-gray-500 hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="." class="bg-gray-500 hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="0" class="bg-gray-500 hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="/" class="bg-gray-500 hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+            <input type="button" value="*" class="bg-gray-500 hover:bg-gray-600 h-[60px] md:w-[170px] w-full  cursor-pointer"> 
+         </div>
+            <div class="grid gap-2 grid-cols-2 w-full place-items-center mt-2 text-white text-[20px] md:text-3xl font-medium md:font-bold ">
+                <input type="button" value="Clear" class="w-full md:w-[368px] h-[70px] bg-red-400 hover:bg-red-600 cursor-pointer">
+                <input type="button" value="=" class="w-full md:w-[368px] h-[70px] bg-green-400 hover:bg-green-600 cursor-pointer">
+            </div>
+     </div>    
+</body>
+</html>
