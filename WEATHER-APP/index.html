@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="grid place-items-start md:place-items-center h-screen bg-[url('./img/bg.jpg')] bg-center bg-cover  bg-no-repeat text-white">
+    <!-- overlay -->
+     <div class="h-screen w-full fixed bg-black/50 inset-0 -z-10 "></div>
+    <!-- Container -->
+     <div class="w-full md:w-[800px] h-[300px] px-5 mt-[40px] md:mt-[-100px] relative">
+        <!-- input -->
+         <div class="md:text-start md:mb-10 text-center mb-5">
+            <input type="text" id="cityInput" placeholder="Search" 
+            class=" w-full md:w-[500px] outline-none border py-2 pl-5 rounded-lg">
+         </div>
+        <!-- 2 Col -->
+         <div class="w-full h-full flex flex-col md:flex-row items-center justify-between gap-2 ">
+            <!-- Col-1/Location Details -->
+             <div class="flex flex-col  items-start" id="weatherDetails">
+                <div class="mb-10">
+                    <h1 id="cityName" class="text-2xl md:text-4xl my-2">Chicago</h1>
+                    <p id="dateTime" class="text-[15px] md:text-[18px]">Wednesday, 8 February 10:00 AM</p>
+                </div>
+                
+                <!-- Weather -->
+                 <div>
+                    <h1 id="temperature" class="text-8xl">25°C</h1>
+                    <p id="weatherDescription" class="text-[20px] md:text-[25px]">Broken Clouds</p>
+                 </div>
+             </div>
+                <!-- Col-2/Location Details/2-Row-->
+                 <div class="grid grid-cols-2 gap-10 md:gap-0 md:mt-0 mt-5" id="forecastContainer">
+                    <!-- Forecast info will be dynamically added here -->
+                 </div>
+         </div>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
