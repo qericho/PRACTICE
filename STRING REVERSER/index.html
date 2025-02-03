@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="grid place-items-center h-screen bg-gray-500">
+    <div class="w-[300px] h-[300px] flex flex-col items-center p-4 border border-gray-800 bg-white shadow-lg rounded-lg">
+        <div class="flex justify-center gap-2">
+            <input id="userInput"  type="text" placeholder="Enter a String" class="border h-[40px] pl-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <button id="submitBtn" class="h-[40px] border p-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 transition">Submit</button>
+        </div>
+        <div class="mt-10 w-full">
+            <h1 id="displayOutput"
+             class="p-5 border w-full text-center hidden rounded-md bg-gray-100">
+             </h1>
+        </div>
+    </div>
+<script src="./app.js"></script>
+</body>
+</html>
