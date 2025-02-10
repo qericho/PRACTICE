@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeFetch</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body class="flex items-center justify-center h-screen w-full bg-black/10 md:px-0 px-2">
+    <div id="container" class="w-[800px] h-[500px] bg-[#fff] mx-auto p-5 relative">
+        <div>
+            <span id="toggleTheme"
+             class="py-1 px-6 bg-black text-white rounded absolute right-2 top-2 cursor-pointer">
+             <i class="fa-solid fa-moon"></i></span>
+        </div>
+        <h1 id="title" class="text-3xl font-bold">Fetch<span class="text-yellow-500">Pokemo!</span></h1>
+        <!-- Input -->
+         <div class="w-full md:w-[500px] mx-auto mt-5">
+            <div class="flex items-center">
+                <input id="userInput"
+                type="text" placeholder="Search Pokemon"
+                 class="w-full py-2 px-4 bg-gray-400 text-white outline-none text-sm md:text-xl font-medium">
+                <button id="submitBtn"
+                class="bg-yellow-500 hover:bg-yellow-600 cursor-pointer text-sm md:text-xl
+                 py-2 px-6 text-white font-bold">Submit</button>
+            </div>
+            <!-- Search Output -->
+            <div  id="box" class="w-[50%] h-[250px] flex items-center justify-center mx-auto hidden shadow-sm mt-10 rounded-md">
+                <!-- img -->
+                  <div class="w-full flex flex-col items-center justify-center">
+                    <div class="w-[150px] h-[100px]">
+                        <img class="w-full h-full object-cover " id="pokeImg"
+                         src="" alt="img">
+                    </div>
+                    <p id="pokeName" class="text-start capitalize mt-2">name:</p>
+                  </div>
+            </div>
+         </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
